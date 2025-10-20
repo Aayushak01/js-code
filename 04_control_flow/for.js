@@ -1,1 +1,30 @@
 console.log("Learning For Loop In JS")
+
+for (let index = 0; index <= 10; index++) {
+    const element = index;
+    // console.log(element);
+    // console.log(`This is ${element} number`);
+}
+
+for (let index = 0; index <= 10; index++) {
+    for (let j = 1; j <= 10; j++) {
+        const element2 = j;
+        // console.log(`This is ${element2} element 2`);
+        // console.log(index + ' * ' + j + " = " + index*j);
+        
+        
+    }
+    const element = index;
+    // console.log(`this is an ${element} element number`);
+    
+    
+}
+
+let myArr = ['Flash', 'Batman', 'Superman']
+
+for (let index = 0; index < myArr.length; index++) {
+    const element = myArr[index];
+    console.log(element);
+    
+}
+console.log(myArr.length);
