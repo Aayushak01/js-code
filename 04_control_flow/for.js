@@ -24,7 +24,23 @@ let myArr = ['Flash', 'Batman', 'Superman']
 
 for (let index = 0; index < myArr.length; index++) {
     const element = myArr[index];
-    console.log(element);
+    // console.log(element);
     
 }
-console.log(myArr.length);
+// console.log(myArr.length);
+
+
+// break and continue
+
+for (let index = 1; index <= 20; index++) {
+    const element = index;
+    if (index == 5 || index == 8){
+        console.log(`Detected 5 or 8`);
+        // break;
+        continue
+    }else {
+        console.log(`Value of i is ${element}`);
+    }
+    // console.log(`Value of i is ${element}`);
+    
+}
