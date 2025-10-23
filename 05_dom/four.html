@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKU | Learning JS DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName) {
+       const newLang = document.createElement('li');
+       newLang.innerHTML = `${langName}`
+       document.querySelector('.language').appendChild(newLang)
+    }
+    addLanguage("python");
+    addLanguage("Typescript"); 
+
+    function addOptionalLanguage(langName) {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    } // optimised way to insert elements
+    addOptionalLanguage("React");
+    addOptionalLanguage("Next.js");
+
+    //edit
+    const secondLang = document.querySelector("li:nth-child(2)")
+    console.log(secondLang)
+    // secondLang.innerHTML = "Java"
+    const newli = document.createElement('li')
+    newli.textContent =  "Java"
+    secondLang.replaceWith(newli)
+
+    //edit
+
+    const seconndlang2 = document.querySelector("li:first-child")
+    seconndlang2.outerHTML = '<li>Typescript</li>'
+
+    //remove
+
+    const lastlang = document.querySelector("li:last-child")
+    lastlang.remove()
+</script>
+</html>
